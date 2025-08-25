@@ -37,7 +37,7 @@ No special prerequisites needed. Just a modern web browser.
 Clone the repository:
 
 bash
-git clone https://github.com/your-username/learn3.git
+git clone https://github.com/ixtiyorai/learn3.git
 Navigate to the project directory:
 
 bash
