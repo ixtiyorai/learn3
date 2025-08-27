@@ -793,854 +793,854 @@
     <script>
         // Sample vocabulary data (in a real scenario, this would be in vocabulary.js)
         const vocabulary = [
-    {
-        day: 1,
-        topic: "Greetings & Introductions",
-        words: [
-            { 
-                en: "Hello", 
-                de: "Hallo", 
-                ru: "Привет",
-                examples: {
-                    en: "Hello, how are you?",
-                    de: "Hallo, wie geht es dir?",
-                    ru: "Привет, как дела?"
-                }
-            },
-            { 
-                en: "Goodbye", 
-                de: "Auf Wiedersehen", 
-                ru: "До свидания",
-                examples: {
-                    en: "Goodbye, see you tomorrow!",
-                    de: "Auf Wiedersehen, bis morgen!",
-                    ru: "До свидания, увидимся завтра!"
-                }
-            },
-            { 
-                en: "Please", 
-                de: "Bitte", 
-                ru: "Пожалуйста",
-                examples: {
-                    en: "Please, help me with this.",
-                    de: "Bitte, hilf mir damit.",
-                    ru: "Пожалуйста, помоги мне с этим."
-                }
-            },
-            { 
-                en: "Thank you", 
-                de: "Danke", 
-                ru: "Спасибо",
-                examples: {
-                    en: "Thank you for your help.",
-                    de: "Danke für Ihre Hilfe.",
-                    ru: "Спасибо за вашу помощь."
-                }
-            },
-            { 
-                en: "You're welcome", 
-                de: "Gern geschehen", 
-                ru: "Пожалуйста",
-                examples: {
-                    en: "You're welcome, it was my pleasure.",
-                    de: "Gern geschehen, es war mir ein Vergnügen.",
-                    ru: "Пожалуйста, мне было приятно помочь."
-                }
-            },
-            { 
-                en: "Excuse me", 
-                de: "Entschuldigung", 
-                ru: "Извините",
-                examples: {
-                    en: "Excuse me, can you help me?",
-                    de: "Entschuldigung, können Sie mir helfen?",
-                    ru: "Извините, вы можете мне помочь?"
-                }
-            },
-            { 
-                en: "Sorry", 
-                de: "Entschuldigung", 
-                ru: "Простите",
-                examples: {
-                    en: "Sorry, I didn't mean to bother you.",
-                    de: "Entschuldigung, ich wollte Sie nicht stören.",
-                    ru: "Простите, я не хотел вас беспокоить."
-                }
-            },
-            { 
-                en: "My name is...", 
-                de: "Ich heiße...", 
-                ru: "Меня зовут...",
-                examples: {
-                    en: "My name is John.",
-                    de: "Ich heiße John.",
-                    ru: "Меня зовут Джон."
-                }
-            },
-            { 
-                en: "Nice to meet you", 
-                de: "Schön, Sie kennenzulernen", 
-                ru: "Приятно познакомиться",
-                examples: {
-                    en: "Nice to meet you, I'm Anna.",
-                    de: "Schön, Sie kennenzulernen, ich bin Anna.",
-                    ru: "Приятно познакомиться, я Анна."
-                }
-            },
-            { 
-                en: "How are you?", 
-                de: "Wie geht es Ihnen?", 
-                ru: "Как дела?",
-                examples: {
-                    en: "How are you today?",
-                    de: "Wie geht es Ihnen heute?",
-                    ru: "Как у вас дела сегодня?"
-                }
-            }
-        ]
-    },
-    {
-        day: 2,
-        topic: "Greetings & Introductions",
-        words: [
-            { 
-                en: "Good morning", 
-                de: "Guten Morgen", 
-                ru: "Доброе утро",
-                examples: {
-                    en: "Good morning, did you sleep well?",
-                    de: "Guten Morgen, haben Sie gut geschlafen?",
-                    ru: "Доброе утро, ты хорошо спал?"
-                }
-            },
-            { 
-                en: "Good afternoon", 
-                de: "Guten Tag", 
-                ru: "Добрый день",
-                examples: {
-                    en: "Good afternoon, how has your day been?",
-                    de: "Guten Tag, wie war Ihr Tag?",
-                    ru: "Добрый день, как прошёл твой день?"
-                }
-            },
-            { 
-                en: "Good evening", 
-                de: "Guten Abend", 
-                ru: "Добрый вечер",
-                examples: {
-                    en: "Good evening, would you like some tea?",
-                    de: "Guten Abend, möchten Sie etwas Tee?",
-                    ru: "Добрый вечер, не хочешь чаю?"
-                }
-            },
-            { 
-                en: "Good night", 
-                de: "Gute Nacht", 
-                ru: "Спокойной ночи",
-                examples: {
-                    en: "Good night, sleep well.",
-                    de: "Gute Nacht, schlaf gut.",
-                    ru: "Спокойной ночи, спи хорошо."
-                }
-            },
-            { 
-                en: "See you later", 
-                de: "Bis später", 
-                ru: "Увидимся позже",
-                examples: {
-                    en: "See you later, I have to go now.",
-                    de: "Bis später, ich muss jetzt gehen.",
-                    ru: "Увидимся позже, мне нужно идти."
-                }
-            },
-            { 
-                en: "I am fine", 
-                de: "Mir geht es gut", 
-                ru: "У меня всё хорошо",
-                examples: {
-                    en: "I am fine, thank you for asking.",
-                    de: "Mir geht es gut, danke der Nachfrage.",
-                    ru: "У меня всё хорошо, спасибо, что спросили."
-                }
-            },
-            { 
-                en: "And you?", 
-                de: "Und Ihnen?", 
-                ru: "А у вас?",
-                examples: {
-                    en: "I'm good, and you?",
-                    de: "Mir geht es gut, und Ihnen?",
-                    ru: "У меня всё хорошо, а у вас?"
-                }
-            },
-            { 
-                en: "What's new?", 
-                de: "Was gibt es Neues?", 
-                ru: "Что нового?",
-                examples: {
-                    en: "What's new with you?",
-                    de: "Was gibt es bei Ihnen Neues?",
-                    ru: "Что у тебя нового?"
-                }
-            },
-            { 
-                en: "Nothing much", 
-                de: "Nicht viel", 
-                ru: "Ничего особенного",
-                examples: {
-                    en: "Nothing much, just working.",
-                    de: "Nicht viel, nur arbeiten.",
-                    ru: "Ничего особенного, просто работаю."
-                }
-            },
-            { 
-                en: "Have a nice day", 
-                de: "Einen schönen Tag noch", 
-                ru: "Хорошего дня",
-                examples: {
-                    en: "Have a nice day at work!",
-                    de: "Einen schönen Tag noch bei der Arbeit!",
-                    ru: "Хорошего дня на работе!"
-                }
-            }
-        ]
-    },
-    {
-        day: 3,
-        topic: "Family",
-        words: [
-            { 
-                en: "Family", 
-                de: "Familie", 
-                ru: "Семья",
-                examples: {
-                    en: "My family is very important to me.",
-                    de: "Meine Familie ist mir sehr wichtig.",
-                    ru: "Моя семья очень важна для меня."
-                }
-            },
-            { 
-                en: "Mother", 
-                de: "Mutter", 
-                ru: "Мама",
-                examples: {
-                    en: "My mother is a teacher.",
-                    de: "Meine Mutter ist Lehrerin.",
-                    ru: "Моя мама - учительница."
-                }
-            },
-            { 
-                en: "Father", 
-                de: "Vater", 
-                ru: "Папа",
-                examples: {
-                    en: "My father works in an office.",
-                    de: "Mein Vater arbeitet in einem Büro.",
-                    ru: "Мой папа работает в офисе."
-                }
-            },
-            { 
-                en: "Brother", 
-                de: "Bruder", 
-                ru: "Брат",
-                examples: {
-                    en: "My brother is older than me.",
-                    de: "Mein Bruder ist älter als ich.",
-                    ru: "Мой брат старше меня."
-                }
-            },
-            { 
-                en: "Sister", 
-                de: "Schwester", 
-                ru: "Сестра",
-                examples: {
-                    en: "My sister lives in Berlin.",
-                    de: "Meine Schwester lebt in Berlin.",
-                    ru: "Моя сестра живёт в Берлине."
-                }
-            },
-            { 
-                en: "Grandmother", 
-                de: "Großmutter", 
-                ru: "Бабушка",
-                examples: {
-                    en: "My grandmother makes the best cookies.",
-                    de: "Meine Großmutter macht die besten Kekse.",
-                    ru: "Моя бабушка печёт лучшие печенья."
-                }
-            },
-            { 
-                en: "Grandfather", 
-                de: "Großvater", 
-                ru: "Дедушка",
-                examples: {
-                    en: "My grandfather tells great stories.",
-                    de: "Mein Großvater erzählt großartige Geschichten.",
-                    ru: "Мой дедушка рассказывает замечательные истории."
-                }
-            },
-            { 
-                en: "Son", 
-                de: "Sohn", 
-                ru: "Сын",
-                examples: {
-                    en: "My son is learning to play piano.",
-                    de: "Mein Sohn lernt Klavier spielen.",
-                    ru: "Мой сын учится играть на пианино."
-                }
-            },
-            { 
-                en: "Daughter", 
-                de: "Tochter", 
-                ru: "Дочь",
-                examples: {
-                    en: "My daughter loves to read books.",
-                    de: "Meine Tochter liebt es, Bücher zu lesen.",
-                    ru: "Моя дочь любит читать книги."
-                }
-            },
-            { 
-                en: "Parents", 
-                de: "Eltern", 
-                ru: "Родители",
-                examples: {
-                    en: "My parents are visiting next week.",
-                    de: "Meine Eltern besuchen mich nächste Woche.",
-                    ru: "Мои родители приедут на следующей неделе."
-                }
-            }
-        ]
-    },
-    {
-        day: 4,
-        topic: "Numbers & Colors",
-        words: [
-            { 
-                en: "One", 
-                de: "Eins", 
-                ru: "Один",
-                examples: {
-                    en: "I have one brother.",
-                    de: "Ich habe einen Bruder.",
-                    ru: "У меня один брат."
-                }
-            },
-            { 
-                en: "Two", 
-                de: "Zwei", 
-                ru: "Два",
-                examples: {
-                    en: "There are two apples on the table.",
-                    de: "Es gibt zwei Äpfel auf dem Tisch.",
-                    ru: "На столе два яблока."
-                }
-            },
-            { 
-                en: "Three", 
-                de: "Drei", 
-                ru: "Три",
-                examples: {
-                    en: "We need three chairs for the guests.",
-                    de: "Wir brauchen drei Stühle für die Gäste.",
-                    ru: "Нам нужно три стула для гостей."
-                }
-            },
-            { 
-                en: "Four", 
-                de: "Vier", 
-                ru: "Четыре",
-                examples: {
-                    en: "There are four seasons in a year.",
-                    de: "Es gibt vier Jahreszeiten in einem Jahr.",
-                    ru: "В году четыре времени года."
-                }
-            },
-            { 
-                en: "Five", 
-                de: "Fünf", 
-                ru: "Пять",
-                examples: {
-                    en: "I work five days a week.",
-                    de: "Ich arbeite fünf Tage die Woche.",
-                    ru: "Я работаю пять дней в неделю."
-                }
-            },
-            { 
-                en: "Red", 
-                de: "Rot", 
-                ru: "Красный",
-                examples: {
-                    en: "She was wearing a red dress.",
-                    de: "Sie trug ein rotes Kleid.",
-                    ru: "На ней было красное платье."
-                }
-            },
-            { 
-                en: "Blue", 
-                de: "Blau", 
-                ru: "Синий",
-                examples: {
-                    en: "The sky is blue today.",
-                    de: "Der Himmel ist heute blau.",
-                    ru: "Сегодня небо синее."
-                }
-            },
-            { 
-                en: "Green", 
-                de: "Grün", 
-                ru: "Зелёный",
-                examples: {
-                    en: "The grass is green in spring.",
-                    de: "Das Gras ist im Frühling grün.",
-                    ru: "Весной трава зелёная."
-                }
-            },
-            { 
-                en: "Yellow", 
-                de: "Gelb", 
-                ru: "Жёлтый",
-                examples: {
-                    en: "The sun is yellow and bright.",
-                    de: "Die Sonne ist gelb und hell.",
-                    ru: "Солнце жёлтое и яркое."
-                }
-            },
-            { 
-                en: "Black", 
-                de: "Schwarz", 
-                ru: "Чёрный",
-                examples: {
-                    en: "He wears black shoes to work.",
-                    de: "Er trägt schwarze Schuhe zur Arbeit.",
-                    ru: "Он носит чёрные туфли на работу."
-                }
-            }
-        ]
-    },
-    {
-        day: 5,
-        topic: "Food & Drinks",
-        words: [
-            { 
-                en: "Water", 
-                de: "Wasser", 
-                ru: "Вода",
-                examples: {
-                    en: "I drink water every day.",
-                    de: "Ich trinke jeden Tag Wasser.",
-                    ru: "Я пью воду каждый день."
-                }
-            },
-            { 
-                en: "Coffee", 
-                de: "Kaffee", 
-                ru: "Кофе",
-                examples: {
-                    en: "I drink coffee in the morning.",
-                    de: "Ich trinke morgens Kaffee.",
-                    ru: "Я пью кофе по утрам."
-                }
-            },
-            { 
-                en: "Tea", 
-                de: "Tee", 
-                ru: "Чай",
-                examples: {
-                    en: "Would you like some tea?",
-                    de: "Möchten Sie etwas Tee?",
-                    ru: "Хочешь чаю?"
-                }
-            },
-            { 
-                en: "Bread", 
-                de: "Brot", 
-                ru: "Хлеб",
-                examples: {
-                    en: "I bought fresh bread from the bakery.",
-                    de: "Ich habe frisches Brot von der Bäckerei gekauft.",
-                    ru: "Я купил свежий хлеб из пекарни."
-                }
-            },
-            { 
-                en: "Cheese", 
-                de: "Käse", 
-                ru: "Сыр",
-                examples: {
-                    en: "This cheese is from France.",
-                    de: "Dieser Käse ist aus Frankreich.",
-                    ru: "Этот сыр из Франции."
-                }
-            },
-            { 
-                en: "Apple", 
-                de: "Apfel", 
-                ru: "Яблоко",
-                examples: {
-                    en: "An apple a day keeps the doctor away.",
-                    de: "Ein Apfel am Tag hält den Doktor fern.",
-                    ru: "По яблоку в день - и врач не нужен."
-                }
-            },
-            { 
-                en: "Banana", 
-                de: "Banane", 
-                ru: "Банан",
-                examples: {
-                    en: "Bananas are rich in potassium.",
-                    de: "Bananen sind reich an Kalium.",
-                    ru: "Бананы богаты калием."
-                }
-            },
-            { 
-                en: "Meat", 
-                de: "Fleisch", 
-                ru: "Мясо",
-                examples: {
-                    en: "We don't eat meat on Fridays.",
-                    de: "Wir essen freitags kein Fleisch.",
-                    ru: "Мы не едим мясо по пятницам."
-                }
-            },
-            { 
-                en: "Fish", 
-                de: "Fisch", 
-                ru: "Рыба",
-                examples: {
-                    en: "We're having fish for dinner.",
-                    de: "Wir essen Fisch zum Abendessen.",
-                    ru: "У нас на ужин будет рыба."
-                }
-            },
-            { 
-                en: "Vegetables", 
-                de: "Gemüse", 
-                ru: "Овощи",
-                examples: {
-                    en: "You should eat more vegetables.",
-                    de: "Sie sollten mehr Gemüse essen.",
-                    ru: "Тебе стоит есть больше овощей."
-                }
-            }
-        ]
-    },
-    {
-        day: 6,
-        topic: "Time & Dates",
-        words: [
-            { 
-                en: "Today", 
-                de: "Heute", 
-                ru: "Сегодня",
-                examples: {
-                    en: "Today is a beautiful day.",
-                    de: "Heute ist ein schöner Tag.",
-                    ru: "Сегодня прекрасный день."
-                }
-            },
-            { 
-                en: "Tomorrow", 
-                de: "Morgen", 
-                ru: "Завтра",
-                examples: {
-                    en: "I will call you tomorrow.",
-                    de: "Ich rufe dich morgen an.",
-                    ru: "Я позвоню тебе завтра."
-                }
-            },
-            { 
-                en: "Yesterday", 
-                de: "Gestern", 
-                ru: "Вчера",
-                examples: {
-                    en: "Yesterday was my birthday.",
-                    de: "Gestern war mein Geburtstag.",
-                    ru: "Вчера был мой день рождения."
-                }
-            },
-            { 
-                en: "Day", 
-                de: "Tag", 
-                ru: "День",
-                examples: {
-                    en: "I work eight hours a day.",
-                    de: "Ich arbeite acht Stunden am Tag.",
-                    ru: "Я работаю восемь часов в день."
-                }
-            },
-            { 
-                en: "Week", 
-                de: "Woche", 
-                ru: "Неделя",
-                examples: {
-                    en: "I go to the gym three times a week.",
-                    de: "Ich gehe dreimal pro Woche ins Fitnessstudio.",
-                    ru: "Я хожу в спортзал три раза в неделю."
-                }
-            },
-            { 
-                en: "Month", 
-                de: "Monat", 
-                ru: "Месяц",
-                examples: {
-                    en: "We're going on vacation next month.",
-                    de: "Wir fahren nächsten Monat in den Urlaub.",
-                    ru: "Мы едем в отпуск в следующем месяце."
-                }
-            },
-            { 
-                en: "Year", 
-                de: "Jahr", 
-                ru: "Год",
-                examples: {
-                    en: "I've lived here for five years.",
-                    de: "Ich habe hier seit fünf Jahren gewohnt.",
-                    ru: "Я живу здесь уже пять лет."
-                }
-            },
-            { 
-                en: "Hour", 
-                de: "Stunde", 
-                ru: "Час",
-                examples: {
-                    en: "The movie is two hours long.",
-                    de: "Der Film ist zwei Stunden lang.",
-                    ru: "Фильм длится два часа."
-                }
-            },
-            { 
-                en: "Minute", 
-                de: "Minute", 
-                ru: "Минута",
-                examples: {
-                    en: "I'll be ready in five minutes.",
-                    de: "Ich bin in fünf Minuten fertig.",
-                    ru: "Я буду готов через пять минут."
-                }
-            },
-            { 
-                en: "Second", 
-                de: "Sekunde", 
-                ru: "Секунда",
-                examples: {
-                    en: "Wait a second, please.",
-                    de: "Warten Sie eine Sekunde, bitte.",
-                    ru: "Подождите секунду, пожалуйста."
-                }
-            }
-        ]
-    },
-    {
-        day: 7,
-        topic: "Places & Directions",
-        words: [
-            { 
-                en: "City", 
-                de: "Stadt", 
-                ru: "Город",
-                examples: {
-                    en: "I live in a big city.",
-                    de: "Ich lebe in einer großen Stadt.",
-                    ru: "Я живу в большом городе."
-                }
-            },
-            { 
-                en: "House", 
-                de: "Haus", 
-                ru: "Дом",
-                examples: {
-                    en: "Their house is near the park.",
-                    de: "Ihr Haus ist in der Nähe des Parks.",
-                    ru: "Их дом рядом с парком."
-                }
-            },
-            { 
-                en: "Street", 
-                de: "Straße", 
-                ru: "Улица",
-                examples: {
-                    en: "The restaurant is on Main Street.",
-                    de: "Das Restaurant ist in der Hauptstraße.",
-                    ru: "Ресторан находится на Главной улице."
-                }
-            },
-            { 
-                en: "Park", 
-                de: "Park", 
-                ru: "Парк",
-                examples: {
-                    en: "Children are playing in the park.",
-                    de: "Kinder spielen im Park.",
-                    ru: "Дети играют в парке."
-                }
-            },
-            { 
-                en: "School", 
-                de: "Schule", 
-                ru: "Школа",
-                examples: {
-                    en: "My daughter goes to school nearby.",
-                    de: "Meine Tochter geht in die Schule in der Nähe.",
-                    ru: "Моя дочь ходит в школу неподалёку."
-                }
-            },
-            { 
-                en: "Left", 
-                de: "Links", 
-                ru: "Налево",
-                examples: {
-                    en: "Turn left at the next intersection.",
-                    de: "Biegen Sie an der nächsten Kreuzung links ab.",
-                    ru: "Поверните налево на следующем перекрёстке."
-                }
-            },
-            { 
-                en: "Right", 
-                de: "Rechts", 
-                ru: "Направо",
-                examples: {
-                    en: "The bank is on the right side.",
-                    de: "Die Bank ist auf der rechten Seite.",
-                    ru: "Банк находится справа."
-                }
-            },
-            { 
-                en: "Straight", 
-                de: "Geradeaus", 
-                ru: "Прямо",
-                examples: {
-                    en: "Go straight for two blocks.",
-                    de: "Gehen Sie zwei Blocks geradeaus.",
-                    ru: "Идите прямо два квартала."
-                }
-            },
-            { 
-                en: "Near", 
-                de: "In der Nähe", 
-                ru: "Рядом",
-                examples: {
-                    en: "Is there a pharmacy near here?",
-                    de: "Gibt es eine Apotheke in der Nähe?",
-                    ru: "Есть ли аптека рядом?"
-                }
-            },
-            { 
-                en: "Far", 
-                de: "Weit", 
-                ru: "Далеко",
-                examples: {
-                    en: "The airport is far from the city center.",
-                    de: "Der Flughafen ist weit vom Stadtzentrum entfernt.",
-                    ru: "Аэропорт далеко от центра города."
-                }
-            }
-        ]
-    },
-    {
-        day: 8,
-        topic: "Work & Professions",
-        words: [
-            { 
-                en: "Work", 
-                de: "Arbeit", 
-                ru: "Работа",
-                examples: {
-                    en: "I go to work by bus.",
-                    de: "Ich fahre mit dem Bus zur Arbeit.",
-                    ru: "Я езжу на работу на автобусе."
-                }
-            },
-            { 
-                en: "Job", 
-                de: "Job", 
-                ru: "Работа/Должность",
-                examples: {
-                    en: "She has a new job.",
-                    de: "Sie hat einen neuen Job.",
-                    ru: "У неё новая работа."
-                }
-            },
-            { 
-                en: "Doctor", 
-                de: "Arzt", 
-                ru: "Врач",
-                examples: {
-                    en: "The doctor will see you now.",
-                    de: "Der Arzt wird Sie jetzt sehen.",
-                    ru: "Врач примет вас сейчас."
-                }
-            },
-            { 
-                en: "Teacher", 
-                de: "Lehrer", 
-                ru: "Учитель",
-                examples: {
-                    en: "My mother is a teacher.",
-                    de: "Meine Mutter ist Lehrerin.",
-                    ru: "Моя мама - учительница."
-                }
-            },
-            { 
-                en: "Engineer", 
-                de: "Ingenieur", 
-                ru: "Инженер",
-                examples: {
-                    en: "He is a software engineer.",
-                    de: "Er ist Softwareingenieur.",
-                    ru: "Он инженер-программист."
-                }
-            },
-            { 
-                en: "Student", 
-                de: "Student", 
-                ru: "Студент",
-                examples: {
-                    en: "I am a university student.",
-                    de: "Ich bin Universitätsstudent.",
-                    ru: "Я студент университета."
-                }
-            },
-            { 
-                en: "Manager", 
-                de: "Manager", 
-                ru: "Менеджер",
-                examples: {
-                    en: "She was promoted to manager.",
-                    de: "Sie wurde zur Managerin befördert.",
-                    ru: "Её повысили до менеджера."
-                }
-            },
-            { 
-                en: "Office", 
-                de: "Büro", 
-                ru: "Офис",
-                examples: {
-                    en: "Our office is on the fifth floor.",
-                    de: "Unser Büro ist im fünften Stock.",
-                    ru: "Наш офис на пятом этаже."
-                }
-            },
-            { 
-                en: "Meeting", 
-                de: "Besprechung", 
-                ru: "Встреча",
-                examples: {
-                    en: "We have a meeting at 10 AM.",
-                    de: "Wir haben eine Besprechung um 10 Uhr.",
-                    ru: "У нас встреча в 10 утра."
-                }
-            },
-            { 
-                en: "Computer", 
-                de: "Computer", 
-                ru: "Компьютер",
-                examples: {
-                    en: "I use my computer for work.",
-                    de: "Ich benutze meinen Computer für die Arbeit.",
-                    ru: "Я использую компьютер для работы."
-                }
-            }
-        ]
-    },
+  {
+    day: 1,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Hello",
+        de: "Hallo",
+        ru: "Привет",
+        examples: {
+          en: "Hello, how are you today?",
+          de: "Hallo, wie geht es dir heute?",
+          ru: "Привет, как дела сегодня?"
+        }
+      },
+      {
+        en: "Goodbye",
+        de: "Auf Wiedersehen",
+        ru: "До свидания",
+        examples: {
+          en: "Goodbye, see you tomorrow!",
+          de: "Auf Wiedersehen, bis morgen!",
+          ru: "До свидания, увидимся завтра!"
+        }
+      },
+      {
+        en: "Please",
+        de: "Bitte",
+        ru: "Пожалуйста",
+        examples: {
+          en: "Please, can you help me?",
+          de: "Bitte, kannst du mir helfen?",
+          ru: "Пожалуйста, можешь мне помочь?"
+        }
+      },
+      {
+        en: "Thank you",
+        de: "Danke",
+        ru: "Спасибо",
+        examples: {
+          en: "Thank you for your kindness.",
+          de: "Danke für deine Freundlichkeit.",
+          ru: "Спасибо за твою доброту."
+        }
+      },
+      {
+        en: "You're welcome",
+        de: "Gern geschehen",
+        ru: "Пожалуйста",
+        examples: {
+          en: "You're welcome, happy to help.",
+          de: "Gern geschehen, gerne geholfen.",
+          ru: "Пожалуйста, рад помочь."
+        }
+      },
+      {
+        en: "Excuse me",
+        de: "Entschuldigung",
+        ru: "Извините",
+        examples: {
+          en: "Excuse me, where is the station?",
+          de: "Entschuldigung, wo ist der Bahnhof?",
+          ru: "Извините, где вокзал?"
+        }
+      },
+      {
+        en: "Sorry",
+        de: "Entschuldigung",
+        ru: "Простите",
+        examples: {
+          en: "Sorry, I didn’t mean to interrupt.",
+          de: "Entschuldigung, ich wollte nicht unterbrechen.",
+          ru: "Простите, я не хотел прерывать."
+        }
+      },
+      {
+        en: "My name is...",
+        de: "Ich heiße...",
+        ru: "Меня зовут...",
+        examples: {
+          en: "My name is Emma.",
+          de: "Ich heiße Emma.",
+          ru: "Меня зовут Эмма."
+        }
+      },
+      {
+        en: "Nice to meet you",
+        de: "Schön, Sie kennenzulernen",
+        ru: "Приятно познакомиться",
+        examples: {
+          en: "Nice to meet you, I’m Tom.",
+          de: "Schön, Sie kennenzulernen, ich bin Tom.",
+          ru: "Приятно познакомиться, я Том."
+        }
+      },
+      {
+        en: "How are you?",
+        de: "Wie geht es Ihnen?",
+        ru: "Как дела?",
+        examples: {
+          en: "How are you feeling today?",
+          de: "Wie geht es Ihnen heute?",
+          ru: "Как ты себя чувствуешь сегодня?"
+        }
+      }
+    ]
+  },
+  {
+    day: 2,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "I am fine",
+        de: "Mir geht es gut",
+        ru: "У меня всё хорошо",
+        examples: {
+          en: "I am fine, thanks for asking.",
+          de: "Mir geht es gut, danke der Nachfrage.",
+          ru: "У меня всё хорошо, спасибо, что спросил."
+        }
+      },
+      {
+        en: "And you?",
+        de: "Und Ihnen?",
+        ru: "А у вас?",
+        examples: {
+          en: "I’m great, and you?",
+          de: "Mir geht’s super, und Ihnen?",
+          ru: "У меня всё отлично, а у вас?"
+        }
+      },
+      {
+        en: "What's new?",
+        de: "Was gibt es Neues?",
+        ru: "Что нового?",
+        examples: {
+          en: "What’s new with you today?",
+          de: "Was gibt es bei dir Neues heute?",
+          ru: "Что нового у тебя сегодня?"
+        }
+      },
+      {
+        en: "Nothing much",
+        de: "Nicht viel",
+        ru: "Ничего особенного",
+        examples: {
+          en: "Nothing much, just relaxing.",
+          de: "Nicht viel, ich entspanne nur.",
+          ru: "Ничего особенного, просто отдыхаю."
+        }
+      },
+      {
+        en: "Good morning",
+        de: "Guten Morgen",
+        ru: "Доброе утро",
+        examples: {
+          en: "Good morning, have a great day!",
+          de: "Guten Morgen, hab einen tollen Tag!",
+          ru: "Доброе утро, хорошего дня!"
+        }
+      },
+      {
+        en: "Good afternoon",
+        de: "Guten Tag",
+        ru: "Добрый день",
+        examples: {
+          en: "Good afternoon, how’s your day?",
+          de: "Guten Tag, wie ist dein Tag?",
+          ru: "Добрый день, как твой день?"
+        }
+      },
+      {
+        en: "Good evening",
+        de: "Guten Abend",
+        ru: "Добрый вечер",
+        examples: {
+          en: "Good evening, nice to see you.",
+          de: "Guten Abend, schön dich zu sehen.",
+          ru: "Добрый вечер, рад тебя видеть."
+        }
+      },
+      {
+        en: "Good night",
+        de: "Gute Nacht",
+        ru: "Спокойной ночи",
+        examples: {
+          en: "Good night, sleep well!",
+          de: "Gute Nacht, schlaf gut!",
+          ru: "Спокойной ночи, спи хорошо!"
+        }
+      },
+      {
+        en: "See you later",
+        de: "Bis später",
+        ru: "Увидимся позже",
+        examples: {
+          en: "See you later at the party.",
+          de: "Bis später auf der Party.",
+          ru: "Увидимся позже на вечеринке."
+        }
+      },
+      {
+        en: "Have a nice day",
+        de: "Einen schönen Tag noch",
+        ru: "Хорошего дня",
+        examples: {
+          en: "Have a nice day at school!",
+          de: "Einen schönen Tag in der Schule!",
+          ru: "Хорошего дня в школе!"
+        }
+      }
+    ]
+  },
+  {
+    day: 3,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Hello (informal)",
+        de: "Hallo",
+        ru: "Привет",
+        examples: {
+          en: "Hello, good to see you!",
+          de: "Hallo, gut dich zu sehen!",
+          ru: "Привет, рад тебя видеть!"
+        }
+      },
+      {
+        en: "Goodbye (informal)",
+        de: "Tschüss",
+        ru: "Пока",
+        examples: {
+          en: "Goodbye, talk soon!",
+          de: "Tschüss, wir sprechen bald!",
+          ru: "Пока, скоро поговорим!"
+        }
+      },
+      {
+        en: "I don't understand",
+        de: "Ich verstehe nicht",
+        ru: "Я не понимаю",
+        examples: {
+          en: "I don’t understand the question.",
+          de: "Ich verstehe die Frage nicht.",
+          ru: "Я не понимаю вопрос."
+        }
+      },
+      {
+        en: "Can you repeat?",
+        de: "Können Sie das wiederholen?",
+        ru: "Можете повторить?",
+        examples: {
+          en: "Can you repeat that, please?",
+          de: "Können Sie das bitte wiederholen?",
+          ru: "Можете повторить, пожалуйста?"
+        }
+      },
+      {
+        en: "How do you say...?",
+        de: "Wie sagt man...?",
+        ru: "Как сказать...?",
+        examples: {
+          en: "How do you say ‘book’ in German?",
+          de: "Wie sagt man ‘Buch’ auf Deutsch?",
+          ru: "Как сказать ‘книга’ по-русски?"
+        }
+      },
+      {
+        en: "Do you speak...?",
+        de: "Sprechen Sie...?",
+        ru: "Вы говорите...?",
+        examples: {
+          en: "Do you speak English?",
+          de: "Sprechen Sie Englisch?",
+          ru: "Вы говорите по-английски?"
+        }
+      },
+      {
+        en: "I speak a little...",
+        de: "Ich spreche ein wenig...",
+        ru: "Я немного говорю по...",
+        examples: {
+          en: "I speak a little German.",
+          de: "Ich spreche ein wenig Deutsch.",
+          ru: "Я немного говорю по-немецки."
+        }
+      },
+      {
+        en: "I'm from...",
+        de: "Ich bin aus...",
+        ru: "Я из...",
+        examples: {
+          en: "I’m from Canada.",
+          de: "Ich bin aus Kanada.",
+          ru: "Я из Канады."
+        }
+      },
+      {
+        en: "Where are you from?",
+        de: "Woher kommen Sie?",
+        ru: "Откуда вы?",
+        examples: {
+          en: "Where are you from originally?",
+          de: "Woher kommen Sie ursprünglich?",
+          ru: "Откуда вы родом?"
+        }
+      },
+      {
+        en: "What is your name?",
+        de: "Wie heißen Sie?",
+        ru: "Как вас зовут?",
+        examples: {
+          en: "What is your name, please?",
+          de: "Wie heißen Sie, bitte?",
+          ru: "Как вас зовут, пожалуйста?"
+        }
+      }
+    ]
+  },
+  {
+    day: 4,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Good",
+        de: "Gut",
+        ru: "Хорошо",
+        examples: {
+          en: "Everything is going good.",
+          de: "Alles läuft gut.",
+          ru: "Всё идёт хорошо."
+        }
+      },
+      {
+        en: "Bad",
+        de: "Schlecht",
+        ru: "Плохо",
+        examples: {
+          en: "I’m feeling bad today.",
+          de: "Ich fühle mich heute schlecht.",
+          ru: "Я чувствую себя плохо сегодня."
+        }
+      },
+      {
+        en: "Excellent",
+        de: "Ausgezeichnet",
+        ru: "Отлично",
+        examples: {
+          en: "Your work is excellent!",
+          de: "Deine Arbeit ist ausgezeichnet!",
+          ru: "Твоя работа отличная!"
+        }
+      },
+      {
+        en: "Terrible",
+        de: "Schrecklich",
+        ru: "Ужасно",
+        examples: {
+          en: "The weather is terrible today.",
+          de: "Das Wetter ist heute schrecklich.",
+          ru: "Погода сегодня ужасная."
+        }
+      },
+      {
+        en: "Maybe",
+        de: "Vielleicht",
+        ru: "Может быть",
+        examples: {
+          en: "Maybe I’ll join you later.",
+          de: "Vielleicht komme ich später dazu.",
+          ru: "Может быть, я присоединюсь позже."
+        }
+      },
+      {
+        en: "Of course",
+        de: "Natürlich",
+        ru: "Конечно",
+        examples: {
+          en: "Of course, I can help you.",
+          de: "Natürlich, ich kann dir helfen.",
+          ru: "Конечно, я могу помочь."
+        }
+      },
+      {
+        en: "What time is it?",
+        de: "Wie spät ist es?",
+        ru: "Который час?",
+        examples: {
+          en: "What time is it right now?",
+          de: "Wie spät ist es gerade?",
+          ru: "Который час сейчас?"
+        }
+      },
+      {
+        en: "What is this?",
+        de: "Was ist das?",
+        ru: "Что это?",
+        examples: {
+          en: "What is this book about?",
+          de: "Worum geht es in diesem Buch?",
+          ru: "О чём эта книга?"
+        }
+      },
+      {
+        en: "Here you are",
+        de: "Hier bitte",
+        ru: "Вот, пожалуйста",
+        examples: {
+          en: "Here you are, your coffee.",
+          de: "Hier bitte, dein Kaffee.",
+          ru: "Вот, пожалуйста, твой кофе."
+        }
+      },
+      {
+        en: "I'm sorry, but...",
+        de: "Es tut mir leid, aber...",
+        ru: "Простите, но...",
+        examples: {
+          en: "I’m sorry, but I’m late.",
+          de: "Es tut mir leid, aber ich bin spät dran.",
+          ru: "Простите, но я опоздал."
+        }
+      }
+    ]
+  },
+  {
+    day: 5,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Hello (on phone)",
+        de: "Hallo",
+        ru: "Алло",
+        examples: {
+          en: "Hello, who’s speaking?",
+          de: "Hallo, wer spricht?",
+          ru: "Алло, кто говорит?"
+        }
+      },
+      {
+        en: "How's it going?",
+        de: "Wie läuft's?",
+        ru: "Как идут дела?",
+        examples: {
+          en: "How’s it going with your project?",
+          de: "Wie läuft’s mit deinem Projekt?",
+          ru: "Как идут дела с твоим проектом?"
+        }
+      },
+      {
+        en: "It's a pleasure",
+        de: "Es ist ein Vergnügen",
+        ru: "Это удовольствие",
+        examples: {
+          en: "It’s a pleasure to meet you.",
+          de: "Es ist ein Vergnügen, dich kennenzulernen.",
+          ru: "Это удовольствие познакомиться с тобой."
+        }
+      },
+      {
+        en: "With pleasure",
+        de: "Mit Vergnügen",
+        ru: "С удовольствием",
+        examples: {
+          en: "I’ll help you with pleasure.",
+          de: "Ich helfe dir mit Vergnügen.",
+          ru: "Я помогу тебе с удовольствием."
+        }
+      },
+      {
+        en: "Take care",
+        de: "Pass auf dich auf",
+        ru: "Берегите себя",
+        examples: {
+          en: "Take care on your trip!",
+          de: "Pass auf dich auf deiner Reise auf!",
+          ru: "Береги себя в поездке!"
+        }
+      },
+      {
+        en: "Until next time",
+        de: "Bis zum nächsten Mal",
+        ru: "До следующего раза",
+        examples: {
+          en: "Until next time, stay safe!",
+          de: "Bis zum nächsten Mal, bleib sicher!",
+          ru: "До следующего раза, береги себя!"
+        }
+      },
+      {
+        en: "Likewise",
+        de: "Ebenfalls",
+        ru: "Взаимно",
+        examples: {
+          en: "Nice to meet you! Likewise!",
+          de: "Schön, dich kennenzulernen! Ebenfalls!",
+          ru: "Приятно познакомиться! Взаимно!"
+        }
+      },
+      {
+        en: "How have you been?",
+        de: "Wie ist es dir ergangen?",
+        ru: "Как ты был?",
+        examples: {
+          en: "How have you been lately?",
+          de: "Wie ist es dir in letzter Zeit ergangen?",
+          ru: "Как ты был в последнее время?"
+        }
+      },
+      {
+        en: "It has been a while",
+        de: "Es ist eine Weile her",
+        ru: "Давненько",
+        examples: {
+          en: "It has been a while since we met.",
+          de: "Es ist eine Weile her, seit wir uns getroffen haben.",
+          ru: "Давненько мы не встречались."
+        }
+      },
+      {
+        en: "I'm doing well, thanks",
+        de: "Mir geht's gut, danke",
+        ru: "У меня всё хорошо, спасибо",
+        examples: {
+          en: "I’m doing well, thanks for asking!",
+          de: "Mir geht’s gut, danke der Nachfrage!",
+          ru: "У меня всё хорошо, спасибо, что спросил!"
+        }
+      }
+    ]
+  },
+  {
+    day: 6,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Pleasure to meet you",
+        de: "Freut mich, Sie kennenzulernen",
+        ru: "Очень приятно",
+        examples: {
+          en: "Pleasure to meet you, I’m Lisa.",
+          de: "Freut mich, Sie kennenzulernen, ich bin Lisa.",
+          ru: "Очень приятно, я Лиза."
+        }
+      },
+      {
+        en: "I am pleased to see you",
+        de: "Ich freue mich, Sie zu sehen",
+        ru: "Я рад вас видеть",
+        examples: {
+          en: "I am pleased to see you again.",
+          de: "Ich freue mich, Sie wieder zu sehen.",
+          ru: "Я рад вас снова видеть."
+        }
+      },
+      {
+        en: "What is your profession?",
+        de: "Was sind Sie von Beruf?",
+        ru: "Кто вы по профессии?",
+        examples: {
+          en: "What is your profession, if I may ask?",
+          de: "Was sind Sie von Beruf, wenn ich fragen darf?",
+          ru: "Кто вы по профессии, если можно спросить?"
+        }
+      },
+      {
+        en: "Are you a student?",
+        de: "Sind Sie ein Student?",
+        ru: "Вы студент?",
+        examples: {
+          en: "Are you a student at this university?",
+          de: "Sind Sie ein Student an dieser Universität?",
+          ru: "Вы студент этого университета?"
+        }
+      },
+      {
+        en: "I'm a teacher",
+        de: "Ich bin Lehrer",
+        ru: "Я учитель",
+        examples: {
+          en: "I’m a teacher at a local school.",
+          de: "Ich bin Lehrer an einer örtlichen Schule.",
+          ru: "Я учитель в местной школе."
+        }
+      },
+      {
+        en: "What is your phone number?",
+        de: "Was ist Ihre Telefonnummer?",
+        ru: "Какой у вас номер телефона?",
+        examples: {
+          en: "What is your phone number for contact?",
+          de: "Was ist Ihre Telefonnummer für den Kontakt?",
+          ru: "Какой у вас номер телефона для связи?"
+        }
+      },
+      {
+        en: "My number is...",
+        de: "Meine Nummer ist...",
+        ru: "Мой номер...",
+        examples: {
+          en: "My number is 123-456-7890.",
+          de: "Meine Nummer ist 123-456-7890.",
+          ru: "Мой номер 123-456-7890."
+        }
+      },
+      {
+        en: "Could you spell that?",
+        de: "Können Sie das buchstabieren?",
+        ru: "Можете это произнести по буквам?",
+        examples: {
+          en: "Could you spell that name, please?",
+          de: "Können Sie den Namen bitte buchstabieren?",
+          ru: "Можете произнести это имя по буквам, пожалуйста?"
+        }
+      },
+      {
+        en: "I'm glad to help",
+        de: "Ich helfe gerne",
+        ru: "Я рад помочь",
+        examples: {
+          en: "I’m glad to help with your question.",
+          de: "Ich helfe gerne mit deiner Frage.",
+          ru: "Я рад помочь с твоим вопросом."
+        }
+      },
+      {
+        en: "What's going on?",
+        de: "Was ist los?",
+        ru: "Что происходит?",
+        examples: {
+          en: "What’s going on with you today?",
+          de: "Was ist heute bei dir los?",
+          ru: "Что у тебя сегодня происходит?"
+        }
+      }
+    ]
+  },
+  {
+    day: 7,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Not bad",
+        de: "Nicht schlecht",
+        ru: "Неплохо",
+        examples: {
+          en: "I’m doing not bad, thanks.",
+          de: "Mir geht’s nicht schlecht, danke.",
+          ru: "У меня всё неплохо, спасибо."
+        }
+      },
+      {
+        en: "Very well",
+        de: "Sehr gut",
+        ru: "Очень хорошо",
+        examples: {
+          en: "Everything is going very well.",
+          de: "Alles läuft sehr gut.",
+          ru: "Всё идёт очень хорошо."
+        }
+      },
+      {
+        en: "I'm tired",
+        de: "Ich bin müde",
+        ru: "Я устал",
+        examples: {
+          en: "I’m tired after a long day.",
+          de: "Ich bin müde nach einem langen Tag.",
+          ru: "Я устал после долгого дня."
+        }
+      },
+      {
+        en: "I'm hungry",
+        de: "Ich habe Hunger",
+        ru: "Я голоден",
+        examples: {
+          en: "I’m hungry, let’s eat soon.",
+          de: "Ich habe Hunger, lass uns bald essen.",
+          ru: "Я голоден, давай поедим скоро."
+        }
+      },
+      {
+        en: "I'm thirsty",
+        de: "Ich habe Durst",
+        ru: "Я хочу пить",
+        examples: {
+          en: "I’m thirsty, can I have water?",
+          de: "Ich habe Durst, kann ich Wasser haben?",
+          ru: "Я хочу пить, можно воды?"
+        }
+      },
+      {
+        en: "Have a safe trip",
+        de: "Gute Reise",
+        ru: "Счастливого пути",
+        examples: {
+          en: "Have a safe trip to London!",
+          de: "Gute Reise nach London!",
+          ru: "Счастливого пути в Лондон!"
+        }
+      },
+      {
+        en: "Take care",
+        de: "Mach's gut",
+        ru: "Береги себя",
+        examples: {
+          en: "Take care, see you soon!",
+          de: "Mach’s gut, bis bald!",
+          ru: "Береги себя, скоро увидимся!"
+        }
+      },
+      {
+        en: "See you soon",
+        de: "Bis bald",
+        ru: "Скоро увидимся",
+        examples: {
+          en: "See you soon at the meeting.",
+          de: "Bis bald beim Treffen.",
+          ru: "Скоро увидимся на встрече."
+        }
+      },
+      {
+        en: "What is your address?",
+        de: "Was ist Ihre Adresse?",
+        ru: "Какой у вас адрес?",
+        examples: {
+          en: "What is your address for delivery?",
+          de: "Was ist Ihre Adresse für die Lieferung?",
+          ru: "Какой у вас адрес для доставки?"
+        }
+      },
+      {
+        en: "Where do you live?",
+        de: "Wo wohnen Sie?",
+        ru: "Где вы живёте?",
+        examples: {
+          en: "Where do you live now?",
+          de: "Wo wohnen Sie jetzt?",
+          ru: "Где ты теперь живёшь?"
+        }
+      }
+    ]
+  },
+  {
+    day: 8,
+    topic: "Greetings & Introductions",
+    words: [
+      {
+        en: "Welcome",
+        de: "Willkommen",
+        ru: "Добро пожаловать",
+        examples: {
+          en: "Welcome to our home!",
+          de: "Willkommen in unserem Zuhause!",
+          ru: "Добро пожаловать в наш дом!"
+        }
+      },
+      {
+        en: "Hello everyone",
+        de: "Hallo zusammen",
+        ru: "Здравствуйте все",
+        examples: {
+          en: "Hello everyone, let’s begin!",
+          de: "Hallo zusammen, lasst uns anfangen!",
+          ru: "Здравствуйте все, давайте начнём!"
+        }
+      },
+      {
+        en: "Long time no see",
+        de: "Lange nicht gesehen",
+        ru: "Давно не виделись",
+        examples: {
+          en: "Long time no see, how are you?",
+          de: "Lange nicht gesehen, wie geht’s dir?",
+          ru: "Давно не виделись, как дела?"
+        }
+      },
+      {
+        en: "What is your goal?",
+        de: "Was ist Ihr Ziel?",
+        ru: "Какая у вас цель?",
+        examples: {
+          en: "What is your goal this year?",
+          de: "Was ist Ihr Ziel in diesem Jahr?",
+          ru: "Какая у вас цель в этом году?"
+        }
+      },
+      {
+        en: "I'm learning a language",
+        de: "Ich lerne eine Sprache",
+        ru: "Я учу язык",
+        examples: {
+          en: "I’m learning a language online.",
+          de: "Ich lerne online eine Sprache.",
+          ru: "Я учу язык онлайн."
+        }
+      },
+      {
+        en: "It's difficult",
+        de: "Es ist schwierig",
+        ru: "Это трудно",
+        examples: {
+          en: "It’s difficult to learn grammar.",
+          de: "Es ist schwierig, Grammatik zu lernen.",
+          ru: "Это трудно выучить грамматику."
+        }
+      },
+      {
+        en: "It's easy",
+        de: "Es ist einfach",
+        ru: "Это легко",
+        examples: {
+          en: "It’s easy to say hello.",
+          de: "Es ist einfach, hallo zu sagen.",
+          ru: "Это легко сказать привет."
+        }
+      },
+      {
+        en: "Do you have any questions?",
+        de: "Haben Sie Fragen?",
+        ru: "У вас есть вопросы?",
+        examples: {
+          en: "Do you have any questions for me?",
+          de: "Haben Sie Fragen an mich?",
+          ru: "У вас есть ко мне вопросы?"
+        }
+      },
+      {
+        en: "Yes, I do",
+        de: "Ja, ich habe",
+        ru: "Да, у меня есть",
+        examples: {
+          en: "Yes, I do have a question.",
+          de: "Ja, ich habe eine Frage.",
+          ru: "Да, у меня есть вопрос."
+        }
+      },
+      {
+        en: "No, I don't",
+        de: "Nein, ich habe nicht",
+        ru: "Нет, у меня нет",
+        examples: {
+          en: "No, I don’t have any questions.",
+          de: "Nein, ich habe keine Fragen.",
+          ru: "Нет, у меня нет вопросов."
+        }
+      }
+    ]
+  },
     {
     day: 9,
     topic: "Family",
